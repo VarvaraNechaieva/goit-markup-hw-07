@@ -68,7 +68,7 @@ span {
   color: var(--secondary-text-color);
 }
 
-/* MOBILE VERSION */
+/* MOBILE VERSION - HEADER */
 
 @media screen and (max-width: 767px) {
   .site-nav {
@@ -162,7 +162,7 @@ span {
   }
 }
 
-/* TABLET VERSION */
+/* TABLET VERSION - HEADER */
 
 @media screen and (min-width: 768px) {
   .menu-mobile {
@@ -274,7 +274,7 @@ span {
     color: var(--accent-color);
   }
 }
-/* DESKTOP VERSION */
+/* DESKTOP VERSION - HEADER*/
 
 @media screen and (min-width: 1200px) {
   .container {
