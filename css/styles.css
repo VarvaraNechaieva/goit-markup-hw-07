@@ -470,6 +470,8 @@ span {
 @media screen and (max-width: 767px) {
   .hero-title {
     padding-bottom: 112px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -477,6 +479,7 @@ span {
   .hero-title {
     padding-bottom: 108px;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -484,9 +487,9 @@ span {
   .hero-title {
     padding: 192px 0;
     max-width: 1440px;
-    max-height: 603px;
+    max-height: 600px;
     margin: 0 auto;
-    background-color: var(--secondary-text-color);
+    text-align: center;
   }
 }
 
@@ -494,7 +497,7 @@ span {
 
 @media screen and (max-width: 767px) {
   .hero-title-head {
-    margin-bottom: 72px;
+    margin: 0 auto 72px auto;
     max-width: 318px;
     font-size: 36px;
     color: var(--background-color);
@@ -503,7 +506,7 @@ span {
 
 @media screen and (min-width: 768px) {
   .hero-title-head {
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
     max-width: 494px;
     font-size: 56px;
     line-height: 1.07;
