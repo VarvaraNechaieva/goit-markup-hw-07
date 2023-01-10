@@ -383,13 +383,13 @@ span {
 /* HERO IMAGES FOR ALL DEVICES */
 
 @media screen and (max-width: 767px) {
-  .hero {
+  .hero-title {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-one-x-mobile.jpg);
+      url(../images/hero-one-x-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -399,24 +399,24 @@ span {
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .hero {
+  .hero-title {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-two-x-mobile.jpg);
+      url(../images/hero-two-x-mobile.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-title {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-one-x-tablet.jpg);
+      url(../images/hero-one-x-tablet.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -426,66 +426,104 @@ span {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-title {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-two-x-tablet.jpg);
+      url(../images/hero-two-x-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero-title {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-one-x-desktop.jpg);
+      url(../images/hero-one-x-desktop.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-title {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Hero-two-x-desktop.jpg);
+      url(../images/hero-two-x-desktop.jpg);
   }
 }
+
+/* SECTION HERO FOR ALL DEVICES */
+
 .hero-title {
-  max-width: 492px;
-  margin: 0 auto 48px auto;
-  color: var(--background-color);
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-}
-.title {
-  padding: 192px 0;
-  max-width: 1440px;
-  max-height: 603px;
-  margin: 0 auto;
-  background-color: var(--secondary-text-color);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.7),
-      rgba(47, 48, 58, 0.7)
-    ),
-    url(../images/peopleoffice.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding-top: 112px;
   text-align: center;
 }
 
-/* Order Service button*/
+@media screen and (max-width: 767px) {
+  .hero-title {
+    padding-bottom: 112px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    padding-bottom: 108px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    padding: 192px 0;
+    max-width: 1440px;
+    max-height: 603px;
+    margin: 0 auto;
+    background-color: var(--secondary-text-color);
+  }
+}
+
+/* HERO HEAD FOR ALL DEVICES */
+
+@media screen and (max-width: 767px) {
+  .hero-title-head {
+    margin-bottom: 72px;
+    max-width: 318px;
+    font-size: 36px;
+    color: var(--background-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title-head {
+    margin-bottom: 40px;
+    max-width: 494px;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--background-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title-head {
+    max-width: 494px;
+    margin: 0 auto 48px auto;
+
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--background-color);
+  }
+}
+
+/* BUTTON "ORDER SERVICE" IS THE SAME FOR ALL DEVICES*/
 
 .order-button {
   display: inline-block;
