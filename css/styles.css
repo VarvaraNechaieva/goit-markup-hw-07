@@ -38,16 +38,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -131,6 +127,8 @@ span {
 
   .menu-mobile-container {
     position: relative;
+    height: 100%;
+    width: 100%;
     padding-top: 80px;
     padding-left: 40px;
     padding-right: 40px;
@@ -159,6 +157,80 @@ span {
   .menu-mobile-close-button:focus {
     background-color: var(--accent-color);
     fill: var(--background-color);
+  }
+
+  .menu-mobile-nav-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .menu-mobile-item-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-transform: capitalize;
+
+    color: var(--secondary-text-color);
+    transition: color var(--transition-duration-function);
+  }
+
+  .menu-mobile-item-link:hover,
+  .menu-mobile-item-link:focus {
+    color: var(--accent-color);
+  }
+
+  .menu-mobile-phone-number {
+    margin-bottom: 40px;
+    margin-top: 284px;
+  }
+  .menu-mobile-phone-number {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+    transition: color var(--transition-duration-function);
+  }
+  .menu-mobile-phone-number:hover,
+  .menu-mobile-phone-number:focus {
+    color: var(--accent-color);
+  }
+
+  .menu-mobile-email {
+    margin-bottom: 48px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--primary-text-color);
+    transition: color var(--transition-duration-function);
+  }
+  .menu-mobile-email:hover,
+  .menu-mobile-email:focus {
+    color: var(--accent-color);
+  }
+
+  .menu-mobile-social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: var(--secondary-background-color);
+    background-color: var(--accent-color);
+
+    transition: background-color var(--transition-duration-function);
+  }
+  .menu-mobile-social-media-link:hover,
+  .menu-mobile-social-media-link:focus {
+    background-color: #31d0aa;
+    fill: var(--secondary-background-color);
+  }
+
+  .menu-mobile-social-media {
+    display: flex;
+    gap: 56px;
   }
 }
 
@@ -310,6 +382,7 @@ span {
 }
 
 /* HERO */
+
 .hero-title {
   max-width: 492px;
   margin: 0 auto 48px auto;
