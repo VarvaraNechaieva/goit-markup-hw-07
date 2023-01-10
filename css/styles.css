@@ -618,109 +618,251 @@ span {
     border-radius: 4px;
     margin-bottom: 8px;
   }
+  .subsection-title {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
-.section-title {
-  margin-bottom: 72px;
-  text-align: center;
-  color: var(--secondary-text-color);
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.1;
-  text-transform: capitalize;
+@media screen and (max-width: 767px) {
+  .subsection-title {
+    text-align: center;
+  }
 }
-.subsection-title {
-  margin-top: 32px;
-  margin-bottom: 8px;
-  color: var(--secondary-text-color);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
+@media screen and (min-width: 768px) {
+  .features {
+    text-align: start;
+  }
 }
-.section-items {
+
+.feature-text {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .subsection-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .feature-text {
+    font-weight: 400;
+  }
+}
+
+/* SECTION "SAMPLES" - WHAT WE ARE DOING */
+
+@media screen and (max-width: 1199px) {
+  .section-samples {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 72px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    text-transform: capitalize;
+  }
+
+  /* .section-items {
   margin-top: 0;
+} */
+  .samples {
+    display: flex;
+    row-gap: 24px;
+  }
+  .samples-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .section-samples {
+    padding-top: 0px;
+    padding-bottom: 120px;
+  }
+  .our-team {
+    display: flex;
+    row-gap: 24px;
+  }
 }
-.samples {
-  display: flex;
-  row-gap: 24px;
-}
-.samples-item:not(:last-child) {
-  margin-right: 24px;
-}
-.our-team {
-  display: flex;
-  row-gap: 24px;
+/* SECTION "OUR TEAM */
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 72px;
+    text-align: center;
+  }
+  .section-team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    margin: auto;
+  }
+  .our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    margin: auto;
+  }
+
+  .team {
+    background-color: var(--secondary-background-color);
+  }
+  .team-member {
+    max-width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-color);
+  }
+  .team-names {
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .name-team-name {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .social-media {
+    display: flex;
+    padding-bottom: 36px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: var(--secondary-background-color);
+    background-color: var(--accent-color);
+
+    transition: background-color var(--transition-duration-function);
+  }
+  .social-media-link:hover,
+  .social-media-link:focus {
+    background-color: #31d0aa;
+    fill: var(--secondary-background-color);
+  }
 }
 
-.team {
-  background-color: var(--secondary-background-color);
+@media screen and (min-width: 768px) {
+  .section-team {
+    padding-top: 96px;
+    padding-bottom: 104px;
+    margin: auto;
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .our-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .team {
+    background-color: var(--secondary-background-color);
+  }
+  .team-member {
+    max-width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-color);
+  }
+  .team-names {
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .name-team-name {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .social-media {
+    display: flex;
+    padding-bottom: 36px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: var(--secondary-background-color);
+    background-color: var(--accent-color);
+
+    transition: background-color var(--transition-duration-function);
+  }
+  .social-media-link:hover,
+  .social-media-link:focus {
+    background-color: #31d0aa;
+    fill: var(--secondary-background-color);
+  }
 }
-.team-member {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--background-color);
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: auto;
+  }
+  .section-title {
+    margin-bottom: 72px;
+  }
 }
-.team-member:not(:last-child) {
+
+/* .team-member:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 /* Sections - Samples, Team + Portfolio */
 
-.section-samples {
+/* .section-team {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-.section-team {
+} */
+/* .section-advantages {
   padding-top: 120px;
-  padding-bottom: 120px;
-}
-.section-advantages {
-  padding-top: 120px;
-}
+} */
 .section-buttons {
   padding-top: 96px;
   padding-bottom: 120px;
 }
 
-.features {
+/* .features {
   display: flex;
-}
+} */
 /* team-name */
-
-.team-names {
-  text-align: center;
-  margin-bottom: 8px;
-}
-.name-team-name {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.social-media {
-  display: flex;
-  padding-bottom: 36px;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-media-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  fill: var(--secondary-background-color);
-  background-color: var(--accent-color);
-
-  transition: background-color var(--transition-duration-function);
-}
-.social-media-link:hover,
-.social-media-link:focus {
-  background-color: #31d0aa;
-  fill: var(--secondary-background-color);
-}
 
 .customers {
   padding-top: 120px;
