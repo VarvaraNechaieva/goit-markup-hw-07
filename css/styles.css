@@ -389,7 +389,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-one-x-mobile.jpg);
+      url(../images/Hero-one-x-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,7 +405,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-two-x-mobile.jpg);
+      url(../images/Hero-two-x-mobile.jpg);
   }
 }
 
@@ -416,7 +416,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-one-x-tablet.jpg);
+      url(../images/Hero-one-x-tablet.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -432,7 +432,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-two-x-tablet.jpg);
+      url(../images/Hero-two-x-tablet.jpg);
   }
 }
 
@@ -443,7 +443,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-one-x-desktop.jpg);
+      url(../images/Hero-one-x-desktop.jpg);
   }
 }
 
@@ -456,7 +456,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-two-x-desktop.jpg);
+      url(../images/Hero-two-x-desktop.jpg);
   }
 }
 
