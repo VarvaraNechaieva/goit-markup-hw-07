@@ -875,12 +875,13 @@ span {
   .our-customers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    row-gap: 16px;
+    column-gap: 72px;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   .customers-list {
-    width: 168px;
+    width: 190px;
     height: 88px;
     cursor: pointer;
     margin: 0;
