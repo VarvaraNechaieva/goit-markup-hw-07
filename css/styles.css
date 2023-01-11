@@ -841,28 +841,10 @@ span {
   }
 }
 
-/* .team-member:not(:last-child) {
-  margin-right: 24px;
-} */
-
-/* Sections - Samples, Team + Portfolio */
-
-/* .section-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
-/* .section-advantages {
-  padding-top: 120px;
-} */
 .section-buttons {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-
-/* .features {
-  display: flex;
-} */
-/* team-name */
 
 /* CUSTOMERS */
 
@@ -874,11 +856,13 @@ span {
   }
   .our-customers {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 16px;
-    column-gap: 72px;
-    /* margin-left: auto;
-    margin-right: auto; */
+    column-gap: 16px;
+    row-gap: 72px;
+
+    margin: auto;
   }
   .customers-list {
     width: 190px;
@@ -913,10 +897,18 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin: auto;
+  }
   .our-customers {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-basis: calc((100%-16px) / 3);
+    column-gap: 24px;
+    row-gap: 72px;
 
     margin: auto;
   }
@@ -994,8 +986,6 @@ span {
   }
 }
 
-/* */
-
 /* Portfolio buttons */
 
 .secondary-button {
@@ -1070,7 +1060,8 @@ span {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Footer */
+/* FOOTER*/
+
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1087,8 +1078,6 @@ footer {
   margin-right: 0;
   margin-left: 0;
 }
-
-/* Footer logo and text */
 
 .footer-container {
   display: flex;
@@ -1224,8 +1213,44 @@ footer {
   fill: currentColor;
 }
 
-/*  ===========BACKDROP ===============  */
+@media screen and (max-width: 767px) {
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin: auto;
+  }
+  .footer-container,
+  .footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-input-email {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
 
+/* ===========BACKDROP =============== */
 .backdrop {
   position: fixed;
   z-index: 50;
