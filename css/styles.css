@@ -1044,6 +1044,12 @@ span {
   row-gap: 48px;
   column-gap: 24px;
 }
+.subsection-portfolio {
+  margin-bottom: 8px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
 
 .services {
   background-color: #ffffff;
@@ -1063,8 +1069,6 @@ span {
 /* FOOTER*/
 
 footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
   color: var(--secondary-button-color);
   background-color: var(--secondary-text-color);
   font-family: inherit;
@@ -1072,33 +1076,15 @@ footer {
 .logo-footer {
   color: var(--secondary-background-color);
 }
-.subsection-portfolio {
-  margin-bottom: 8px;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-.container-footer {
-  margin-right: 120px;
-}
 
 .summary {
   width: 264px;
   margin-top: 16px;
 }
-.footer-logo {
+/* .footer-logo {
   padding: 0;
   margin: 0;
-}
-
-.footer-info {
-  display: flex;
-}
+} */
 
 .social-media-footer-title {
   font-weight: 600;
@@ -1133,13 +1119,6 @@ footer {
 .footer-social-media-link:focus {
   background-color: #31d0aa;
   fill: var(--secondary-background-color);
-}
-
-.footer-subscribe {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
-  gap: 24px;
 }
 
 .footer-input-email {
@@ -1219,10 +1198,19 @@ footer {
     padding-bottom: 96px;
     margin: auto;
   }
-  .footer-container,
-  .footer-subscribe {
+  .footer-container {
     display: flex;
     flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experiment {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -1230,6 +1218,11 @@ footer {
   .footer-input-email {
     width: 100%;
     margin: auto;
+  }
+  .footer-logo,
+  .social-media-footer-title,
+  .footer-input-description {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1246,8 +1239,45 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
+  .experiment {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: auto;
+  }
+  /* .footer-subscribe {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    gap: 24px;
+  } */
 }
 @media screen and (min-width: 1200px) {
+  footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .container-footer {
+    margin-right: 120px;
+  }
+  .footer-info {
+    display: flex;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    gap: 24px;
+  }
+  .footer-subscribe {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 /* ===========BACKDROP =============== */
