@@ -57,7 +57,7 @@
           </button>
           <ul class="menu-mobile-nav">
             <li class="menu-mobile-nav-item">
-              <a href="" class="menu-mobile-item-link">Studio</a>
+              <a href="" class="menu-mobile-item-link current">Studio</a>
             </li>
             <li class="menu-mobile-nav-item">
               <a href="" class="menu-mobile-item-link">Portfolio</a>
@@ -66,58 +66,57 @@
               <a href="" class="menu-mobile-item-link">Contacts</a>
             </li>
           </ul>
-          <div>
-            <ul class="menu-mobile-contacts">
-              <li class="menu-mobile-phone-number">+11 (000) 111-11-11</li>
-              <li class="menu-mobile-email">info@devstudio.com</li>
-            </ul>
-            <ul class="menu-mobile-social-media">
-              <li class="menu-mobile-social-media-item">
-                <a href="" class="menu-mobile-social-media-link">
-                  <svg
-                    class="menu-mobile-social-media-icon"
-                    width="16"
-                    height="16"
-                  >
-                    <use href="./images/sprite.svg.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-mobile-social-media-item">
-                <a href="" class="menu-mobile-social-media-link">
-                  <svg
-                    class="menu-mobile-social-media-icon"
-                    width="16"
-                    height="16"
-                  >
-                    <use href="./images/sprite.svg.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-mobile-social-media-item">
-                <a href="" class="menu-mobile-social-media-link">
-                  <svg
-                    class="menu-mobile-social-media-icon"
-                    width="16"
-                    height="16"
-                  >
-                    <use href="./images/sprite.svg.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-mobile-social-media-item">
-                <a href="" class="menu-mobile-social-media-link">
-                  <svg
-                    class="menu-mobile-social-media-icon"
-                    width="16"
-                    height="16"
-                  >
-                    <use href="./images/sprite.svg.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          <ul class="menu-mobile-contacts">
+            <li class="menu-mobile-phone-number">+11 (000) 111-11-11</li>
+            <li class="menu-mobile-email">info@devstudio.com</li>
+          </ul>
+          <ul class="menu-mobile-social-media">
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -191,6 +190,7 @@
       </section>
 
       <!-- Samples -->
+
       <section class="section-samples samples">
         <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
@@ -231,6 +231,10 @@
           <ul class="our-team">
             <li class="team-member">
               <img
+                srcset="
+                  ./images/mark-guerrero.webp    1x,
+                  ./images/mark-guerrero@2x.webp 2x
+                "
                 src="./images/markguererro.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -273,6 +277,7 @@
             </li>
             <li class="team-member">
               <img
+                srcset="./images/tom-ford.webp 1x, ./images/tom-ford@2x.webp 2x"
                 src="./images/tomford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -315,6 +320,10 @@
             </li>
             <li class="team-member">
               <img
+                srcset="
+                  ./images/camila-garcia.webp    1x,
+                  ./images/camila-garcia@2x.webp 2x
+                "
                 src="./images/camilagarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -357,6 +366,10 @@
             </li>
             <li class="team-member">
               <img
+                srcset="
+                  ./images/daniel-wilson.webp    1x,
+                  ./images/daniel-wilson@2x.webp 2x
+                "
                 src="./images/danielwilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -502,11 +515,12 @@
             </li>
           </ul>
         </div>
-
-        <form class="footer-subscribe">
+        <div class="footer-subscribe-div">
+          <!-- <form class="footer-subscribe">
           <label for="email" class="footer-input-fill"
-            ><span class="footer-input-description">Subscribe</span>
-<div class="experiment">
+            ><span class="footer-input-description">Subscribe</span> -->
+          <h2 class="footer-input-description">Subscribe</h2>
+          <form class="footer-subscribe">
             <input
               type="email"
               name="user-email"
@@ -514,24 +528,24 @@
               required
               class="footer-input-email"
               id="email"
-          /></label>
-          <button type="submit" class="footer-subscribe-button">
-            Subscribe<svg
-              class="footer-subscribe-button-icon"
-              width="24"
-              height="24"
-            >
-              <use href="./images/sprite.svg.svg#subscribe"></use>
-            </svg>
-          </button>
-          </div>
-        </form>
+            />
+            <button type="submit" class="footer-subscribe-button">
+              Subscribe<svg
+                class="footer-subscribe-button-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- BACKDROP -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-button-icon" width="8" height="8">
@@ -612,7 +626,7 @@
       </div>
     </div>
 
-    <script src="./JS/modal.js"></script> -->
+    <script src="./JS/modal.js"></script>
 
     <script src="./JS/menu-mobile.js"></script>
   </body>
