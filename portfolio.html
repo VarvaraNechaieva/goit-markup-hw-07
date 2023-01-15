@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container page-header-container">
         <a href="./portfolio.html" class="logo">Web<span>Studio</span></a>
         <nav class="site-nav-list">
@@ -42,9 +42,87 @@
             <a href="tel:+110001111111" class="contacts">+11(000)111-11-11</a>
           </li>
         </ul>
+        <button type="button" class="menu-mobile-open-button js-open-menu">
+          <svg class="menu-mobile-open-icon" width="32" height="22">
+            <use href="./images/sprite.svg.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-mobile js-menu-container">
+        <div class="container menu-mobile-container">
+          <button class="menu-mobile-close-button js-close-menu">
+            <svg class="menu-mobile-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="menu-mobile-nav">
+            <li class="menu-mobile-nav-item">
+              <a href="" class="menu-mobile-item-link current">Studio</a>
+            </li>
+            <li class="menu-mobile-nav-item">
+              <a href="" class="menu-mobile-item-link">Portfolio</a>
+            </li>
+            <li class="menu-mobile-nav-item">
+              <a href="" class="menu-mobile-item-link">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="menu-mobile-contacts">
+            <li class="menu-mobile-phone-number">+11 (000) 111-11-11</li>
+            <li class="menu-mobile-email">info@devstudio.com</li>
+          </ul>
+          <ul class="menu-mobile-social-media">
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-mobile-social-media-item">
+              <a href="" class="menu-mobile-social-media-link">
+                <svg
+                  class="menu-mobile-social-media-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/sprite.svg.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
+      <!-- BUTTON SECTION -->
+
       <section class="section-buttons">
         <div class="container">
           <ul class="secondary-btn-list">
@@ -319,11 +397,8 @@
           </ul>
         </div>
         <div class="footer-subscribe-div">
-        <!-- <form class="footer-subscribe">
-          <label for="email" class="footer-input-fill"
-            ><span class="footer-input-description">Subscribe</span> -->
-            <h2 class="footer-input-description">Subscribe</h2>
-<form class="footer-subscribe">
+          <h2 class="footer-input-description">Subscribe</h2>
+          <form class="footer-subscribe">
             <input
               type="email"
               name="user-email"
@@ -331,19 +406,22 @@
               required
               class="footer-input-email"
               id="email"
-          /></label>
-          <button type="submit" class="footer-subscribe-button">
-            Subscribe<svg
-              class="footer-subscribe-button-icon"
-              width="24"
-              height="24"
-            >
-              <use href="./images/sprite.svg.svg#subscribe"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+            />
+            <button type="submit" class="footer-subscribe-button">
+              Subscribe<svg
+                class="footer-subscribe-button-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./JS/modal.js"></script>
+
+    <script src="./JS/menu-mobile.js"></script>
   </body>
 </html>
