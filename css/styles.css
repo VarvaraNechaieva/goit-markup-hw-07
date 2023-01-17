@@ -110,7 +110,7 @@ header {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    max-height: 796px;
+
     top: 0;
     left: 0;
     z-index: 50;
@@ -656,8 +656,8 @@ header {
     background-color: var(--secondary-background-color);
     border-radius: 4px;
   }
-  .subsection-title {
-    margin-top: 32px;
+  .section-items {
+    margin-top: 8px;
     margin-bottom: 8px;
     color: var(--secondary-text-color);
     font-weight: 600;
